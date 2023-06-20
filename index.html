@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+    <title>Document</title>
+    <style>
+        #bar{
+            font-family: Didot;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bar">
+    </div>
+    <div id="detail"></div>
+    <form>
+        <input type="radio" value="price" id="price" name="data_type" onchange="handleChange(this)">
+        <label for="price">Average Price(US$/month)</label>
+        <input type="radio" value="library" id="library" name="data_type"  onchange="handleChange(this)">
+        <label for="library">Total Library Size</label>
+        <input type="radio" value="all" id="all" name="data_type"  onchange="handleChange(this)">
+        <label for="all">Both</label>
+    
+    </form>
+  
+        
+    <div id="linear">
+    </div>
+
+
+
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
